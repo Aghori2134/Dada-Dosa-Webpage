@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dada Dosa | Authentic Taste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+			scroll-behavior:smooth
+        }
+
+        .hand {
+            font-family: 'Kalam', cursive;
+        }
+		.progress {
+			position:fixed;
+			top:0;
+			left:0;
+			width:3px;
+			height:100%;
+			background-color:#A3E635;
+			animation: progress linear;
+			z-index: 9999;
+			transform-origin: 50% 0%;
+			animation-timeline:scroll();
+		}
+
+		@keyframes progress {
+			from { transform: scaleY(0); }
+			to { transform: scaleY(1); }
+		}
+		.text{
+			animation:appear 1s linear;
+		}
+		@keyframes appear{
+			from{
+				opacity:0;
+				transform:translateX(-40px);
+				filter:blur(5px);
+			}
+			to{
+				opacity: 1;
+				transform: translateX(0);
+				filter: blur(0);
+			}
+		}
+		.card{
+				animation:card linear;
+				animation-timeline:view();
+				animation-range:0% 40%;
+		}
+		@keyframes card{
+			from {
+				opacity: 0;
+				filter: blur(6px);
+				transform:translateY(-60px);
+			}
+		
+			to {
+				opacity: 1;
+				filter: blur(0);
+				transform:translateY(0);
+			}
+		}
+		.card2{
+				animation:card2 linear;
+				animation-timeline:view();
+				animation-range:0% 40%;
+		}
+		@keyframes card2{
+			from {
+				opacity: 0;
+				filter: blur(6px);
+				transform:translatex(60px);
+			}
+		
+			to {
+				opacity: 1;
+				filter: blur(0);
+				transform:translateX(0);
+			}
+		}
+    </style>
+</head>
+<body class="bg-[#070907] text-white">
+<div class="progress"></div>
+<div class="fixed left-0 top-0 z-50 h-screen w-16 hover:w-64
+            bg-[#090d0b]/95 border-r border-lime-400/30
+            transition-all duration-500 group">
+
+    <div class="h-full flex flex-col">
+        <div class="h-28 flex items-center justify-center border-b border-white/10">
+            <div class="text-center opacity-0 group-hover:opacity-100
+                        transition duration-300 whitespace-nowrap">
+                <img src="https://m.media-amazon.com/images/I/61zeOecTw0L.png" class="w-28">
+            </div>
+
+            <i class="ri-restaurant-2-fill text-2xl text-lime-400
+                      group-hover:hidden"></i>
+        </div>
+        <div class="flex-1 flex flex-col justify-center gap-3">
+
+            <a href="#home"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-home-5-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    Home
+                </span>
+            </a>
+
+            <a href="#menu"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-restaurant-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    Our Menu
+                </span>
+            </a>
+
+            <a href="#about"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-user-heart-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    About Us
+                </span>
+            </a>
+
+            <a href="#story"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-book-open-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    Our Story
+                </span>
+            </a>
+
+            <a href="#gallery"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-image-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    Gallery
+                </span>
+            </a>
+
+            <a href="#contact"
+               class="flex items-center gap-5 px-5 py-4
+                      hover:bg-lime-400 hover:text-black rounded-r-full
+                      transition">
+                <i class="ri-phone-line text-xl"></i>
+                <span class="opacity-0 group-hover:opacity-100
+                             whitespace-nowrap transition">
+                    Contact
+                </span>
+            </a>
+
+        </div>
+        <div class="p-4 text-center border-t border-white/10">
+            <p class="text-lime-300 text-xs opacity-0 group-hover:opacity-100
+                      whitespace-nowrap transition">
+                अस्सल चव ❤️
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="fixed right-0 top-0 z-50 h-screen w-14 hover:w-48
+            bg-[#090d0b]/95 border-l border-lime-400/30
+            transition-all duration-500 group">
+
+    <div class="h-full flex flex-col items-center justify-center gap-5">
+
+        <span class="hand text-lime-300 text-xl rotate-[-8deg]
+                     opacity-0 group-hover:opacity-100 transition">
+            Follow Us
+        </span>
+
+        <a href="#"
+           class="w-10 h-10 rounded-full border border-white/30
+                  flex items-center justify-center
+                  hover:bg-lime-400 hover:text-black transition">
+            <i class="ri-instagram-line text-xl"></i>
+        </a>
+
+        <a href="#"
+           class="w-10 h-10 rounded-full border border-white/30
+                  flex items-center justify-center
+                  hover:bg-lime-400 hover:text-black transition">
+            <i class="ri-facebook-fill text-xl"></i>
+        </a>
+
+        <a href="#"
+           class="w-10 h-10 rounded-full border border-white/30
+                  flex items-center justify-center
+                  hover:bg-lime-400 hover:text-black transition">
+            <i class="ri-youtube-fill text-xl"></i>
+        </a>
+
+        <a href="#"
+           class="w-10 h-10 rounded-full border border-white/30
+                  flex items-center justify-center
+                  hover:bg-lime-400 hover:text-black transition">
+            <i class="ri-map-pin-line text-xl"></i>
+        </a>
+    </div>
+</div>
+<main class="ml-16 mr-14">
+<section id="home"
+    class="min-h-screen relative flex items-center overflow-hidden
+           bg-[url('images/hero.png')]
+           bg-cover bg-center">
+
+    <div class="absolute inset-0 bg-black/75"></div>
+    <div class="absolute -left-32 top-20 w-96 h-96
+                bg-lime-500/20 blur-[120px] rounded-full"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-10
+                grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text">
+
+            <p class="text-lime-300 tracking-[0.4em] uppercase text-sm mb-5">
+                Authentic • Crispy • Delicious
+            </p>
+
+            <h1 class="text-7xl md:text-8xl font-black leading-none">
+                दादा
+                <span class="text-[#d9008b]">♥</span>
+            </h1>
+
+            <h2 class="text-5xl md:text-6xl font-bold mt-2">
+                डोसा
+            </h2>
+
+            <p class="hand text-lime-300 text-2xl mt-5">
+                अस्सल दावणगिरी लोणी डोश्याची चव.....!
+            </p>
+
+            <p class="text-gray-300 max-w-xl mt-6 leading-8">
+                Crispy on the outside, soft and flavorful inside.
+                Experience the authentic taste of South Indian dosa
+                made with love, tradition and the freshest ingredients.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mt-8">
+
+                <a href="#menu"
+                   class="px-8 py-4 bg-lime-400 text-black font-bold
+                          rounded-full hover:bg-lime-300 hover:scale-105
+                          transition">
+                    Explore Menu
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+
+                <a href="#about"
+                   class="px-8 py-4 border border-white/30 rounded-full
+                          hover:border-lime-400 hover:text-lime-300 transition">
+                    Discover Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2
+                animate-bounce text-lime-300">
+        <i class="ri-arrow-down-line text-2xl"></i>
+    </div>
+
+</section>
+<section class="py-20 bg-[#090d0b]">
+
+    <div class="max-w-6xl mx-auto px-8
+                grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="text-center border-r border-white/10 px-5 card">
+            <div class="w-16 h-16 mx-auto rounded-full bg-lime-400
+                        text-black flex items-center justify-center">
+                <i class="ri-leaf-line text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mt-5">Fresh Ingredients</h3>
+            <p class="text-gray-400 text-sm mt-3">
+                Only fresh and quality ingredients in every dosa.
+            </p>
+        </div>
+
+        <div class="text-center border-r border-white/10 px-5 card">
+            <div class="w-16 h-16 mx-auto rounded-full bg-lime-400
+                        text-black flex items-center justify-center">
+                <i class="ri-fire-line text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mt-5">Crispy Every Time</h3>
+            <p class="text-gray-400 text-sm mt-3">
+                Perfectly cooked with our traditional technique.
+            </p>
+        </div>
+
+        <div class="text-center border-r border-white/10 px-5 card">
+            <div class="w-16 h-16 mx-auto rounded-full bg-lime-400
+                        text-black flex items-center justify-center">
+                <i class="ri-heart-3-line text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mt-5">Made With Love</h3>
+            <p class="text-gray-400 text-sm mt-3">
+                Every plate carries our passion for good food.
+            </p>
+        </div>
+
+        <div class="text-center px-5 card">
+            <div class="w-16 h-16 mx-auto rounded-full bg-lime-400
+                        text-black flex items-center justify-center">
+                <i class="ri-emotion-happy-line text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-xl mt-5">Happy Customers</h3>
+            <p class="text-gray-400 text-sm mt-3">
+                Thousands of dosa lovers visit us every month.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section id="menu" class="py-24 bg-[#050705]">
+
+    <div class="max-w-7xl mx-auto px-8">
+
+        <div class="flex flex-col md:flex-row justify-between
+                    md:items-end mb-14 card2">
+
+            <div>
+                <p class="text-lime-300 tracking-[0.4em] text-sm">
+                    OUR SPECIAL
+                </p>
+
+                <h2 class="hand text-6xl md:text-7xl mt-2">
+                    Dosa Menu
+                </h2>
+            </div>
+
+            <p class="text-gray-400 max-w-md mt-5 md:mt-0">
+                Traditional recipes with a modern touch.
+                Pick your favorite and enjoy the real Dada Dosa experience.
+            </p>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group bg-[#101510] rounded-3xl overflow-hidden
+                        border border-white/10 hover:border-lime-400/60
+                        transition card">
+
+                <div class="h-60 overflow-hidden">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDjUqOyQCMvqMPdbPdf-Oj5m-su6gla-VaG8vLpi9eg&s=10"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110 transition duration-700"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between">
+                        <h3 class="text-xl font-bold">Plain Dosa</h3>
+                        <span class="text-lime-300">₹89</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Thin, crispy and perfectly golden dosa.
+                    </p>
+
+                    <button class="mt-5 text-lime-300">
+                        Order Now
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="group bg-[#101510] rounded-3xl overflow-hidden
+                        border border-white/10 hover:border-lime-400/60
+                        transition card">
+
+                <div class="h-60 overflow-hidden">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSTteIGIzpewlgDgEL5UdZdRmh0_ilLgwkoiT7srZ2A&s=10"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110 transition duration-700"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between">
+                        <h3 class="text-xl font-bold">Masala Dosa</h3>
+                        <span class="text-lime-300">₹119</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Crispy dosa stuffed with spicy potato masala.
+                    </p>
+
+                    <button class="mt-5 text-lime-300">
+                        Order Now
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="group bg-[#101510] rounded-3xl overflow-hidden
+                        border border-white/10 hover:border-lime-400/60
+                        transition card">
+
+                <div class="h-60 overflow-hidden">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjBTFSeZPtTTWBqq_aXyF4MJIGc6L8KJIsRzB0pazSQ&s=10"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110 transition duration-700"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between">
+                        <h3 class="text-xl font-bold">Cheese Dosa</h3>
+                        <span class="text-lime-300">₹159</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Crispy dosa loaded with creamy melted cheese.
+                    </p>
+
+                    <button class="mt-5 text-lime-300">
+                        Order Now
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="group bg-[#101510] rounded-3xl overflow-hidden
+                        border border-white/10 hover:border-lime-400/60
+                        transition card">
+
+                <div class="h-60 overflow-hidden">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-D1Kiey_5k6yUkuo3CXJ-jpollG-81vAKviZM66myKg&s=10"
+                        class="w-full h-full object-cover
+                               group-hover:scale-110 transition duration-700"
+                    >
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between">
+                        <h3 class="text-xl font-bold">Onion Dosa</h3>
+                        <span class="text-lime-300">₹129</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm mt-3">
+                        Crispy dosa topped with fresh onions and spices.
+                    </p>
+
+                    <button class="mt-5 text-lime-300">
+                        Order Now
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="about" class="py-24 bg-[#0b100c]">
+
+    <div class="max-w-6xl mx-auto px-8
+                grid lg:grid-cols-2 gap-16 items-center">
+
+        <div class="relative card2">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8ihMfyoPRd7aHVmW6wyfq1dzCUIa6yFIXB4PCmCcyg&s=10"
+                class="rounded-[40px] w-full h-[550px] object-cover">
+
+            <div class="absolute -bottom-8 -right-8
+                        bg-lime-400 text-black rounded-3xl
+                        p-7 w-48">
+                <p class="text-4xl font-black">6+</p>
+                <p class="font-semibold">Years of Taste</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <p class="text-lime-300 tracking-[0.4em] text-sm">
+                ABOUT DADA DOSA
+            </p>
+
+            <h2 class="hand text-6xl mt-4">
+                More Than Just A Dosa
+            </h2>
+
+            <p class="text-gray-400 leading-8 mt-7">
+                Dada Dosa started with a simple dream — to serve delicious,
+                authentic and affordable dosa to everyone.
+            </p>
+
+            <p class="text-gray-400 leading-8 mt-5">
+                From our crispy signature dosa to flavorful chutneys,
+                every recipe is inspired by traditional South Indian
+                cooking and prepared with our own special touch.
+            </p>
+
+            <div class="grid grid-cols-2 gap-5 mt-8">
+
+                <div class="border-l-2 border-lime-400 pl-4">
+                    <h3 class="font-bold text-xl">100%</h3>
+                    <p class="text-gray-400 text-sm">Fresh Batter</p>
+                </div>
+
+                <div class="border-l-2 border-lime-400 pl-4">
+                    <h3 class="font-bold text-xl">15+</h3>
+                    <p class="text-gray-400 text-sm">Special Recipes</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="story" class="py-24 bg-[#050705]">
+
+    <div class="max-w-5xl mx-auto px-8 text-center card">
+
+        <p class="text-lime-300 tracking-[0.4em] text-sm">
+            OUR JOURNEY
+        </p>
+
+        <h2 class="hand text-6xl mt-4">
+            The Dada Dosa Story
+        </h2>
+
+        <p class="text-gray-400 max-w-3xl mx-auto leading-8 mt-7">
+            What began as a small food dream slowly became a favorite
+            destination for dosa lovers. Our journey is built around
+            family recipes, traditional flavors and thousands of smiles.
+        </p>
+
+
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+            <div class="border border-white/10 rounded-3xl p-8
+                        hover:border-lime-400 transition card">
+                <span class="text-lime-300 text-4xl font-black">01</span>
+                <h3 class="text-xl font-bold mt-5">The Beginning</h3>
+                <p class="text-gray-400 text-sm mt-4">
+                    A small kitchen and a big passion for authentic dosa.
+                </p>
+            </div>
+
+            <div class="border border-white/10 rounded-3xl p-8
+                        hover:border-lime-400 transition card">
+                <span class="text-lime-300 text-4xl font-black">02</span>
+                <h3 class="text-xl font-bold mt-5">Growing Together</h3>
+                <p class="text-gray-400 text-sm mt-4">
+                    More customers, more recipes and countless memories.
+                </p>
+            </div>
+
+            <div class="border border-white/10 rounded-3xl p-8
+                        hover:border-lime-400 transition card">
+                <span class="text-lime-300 text-4xl font-black">03</span>
+                <h3 class="text-xl font-bold mt-5">Today</h3>
+                <p class="text-gray-400 text-sm mt-4">
+                    A place where everyone comes for good food and good mood.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="py-24 bg-lime-400 text-black">
+
+    <div class="max-w-6xl mx-auto px-8
+                grid lg:grid-cols-2 gap-12 items-center">
+
+        <div class="card2">
+
+            <p class="uppercase tracking-[0.3em] text-sm font-bold">
+                Weekend Special
+            </p>
+
+            <h2 class="text-6xl font-black mt-3">
+                Dada Family Combo
+            </h2>
+
+            <p class="mt-6 max-w-xl leading-8">
+                Perfect for sharing with family and friends.
+                Get our signature dosa, idli, vada, chutney and
+                refreshing filter coffee in one delicious combo.
+            </p>
+
+            <div class="flex items-center gap-6 mt-8">
+
+                <span class="text-4xl font-black">₹399</span>
+
+                <a href="#contact"
+                   class="bg-black text-white px-7 py-4 rounded-full
+                          hover:bg-gray-800 transition">
+                    Grab The Combo
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdzXPJNnOkEKzPg6fNJsquxTD5HD14cMZN10_7szRTQ&s"
+                class="rounded-[40px] h-[400px] w-full object-cover
+                       shadow-2xl"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+<section id="gallery" class="py-24 bg-[#090d0b]">
+
+    <div class="max-w-7xl mx-auto px-8">
+
+        <div class="text-center mb-14 card2">
+
+            <p class="text-lime-300 tracking-[0.4em] text-sm">
+                FOOD • PEOPLE • MEMORIES
+            </p>
+
+            <h2 class="hand text-6xl mt-3">
+                Dada Gallery
+            </h2>
+
+        </div>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRIMc_89i34l351f-ndnFZkvZ_-q6FaswdFU-hlNxvqg&s=10"
+                class="h-72 w-full object-cover rounded-3xl
+                       hover:scale-[1.02] transition card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9UD-YO-o2gf08-IlSO6lSOucSATACnHIne10bLSSzA&s=10"
+                class="h-72 w-full object-cover rounded-3xl
+                       hover:scale-[1.02] transition card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPgdm3KOD0FzFw0Qeoe9gb-Cgk0nSCODQ0FnW9-QR0Pw&s=10"
+                class="h-72 w-full object-cover rounded-3xl
+                       hover:scale-[1.02] transition card">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwV3mmFAf7GP7fjV65xmeaJK8zrmGdg7a4Bb1HQv9Tw&s=10"
+                class="h-72 w-full object-cover rounded-3xl
+                       hover:scale-[1.02] transition card">
+
+        </div>
+
+    </div>
+
+</section>
+<section class="py-24 bg-[#050705]">
+
+    <div class="max-w-6xl mx-auto px-8">
+
+        <div class="text-center card2">
+
+            <p class="text-lime-300 tracking-[0.4em] text-sm">
+                CUSTOMER LOVE
+            </p>
+
+            <h2 class="hand text-6xl mt-3">
+                What People Say
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-7 mt-14">
+
+            <div class="bg-[#101510] p-8 rounded-3xl border border-white/10 card">
+                <div class="text-lime-300">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-300 leading-7 mt-5">
+                    "The dosa was perfectly crispy and the chutney
+                    tasted absolutely amazing."
+                </p>
+
+                <h4 class="font-bold mt-6">Ajit chhanwal.</h4>
+                <p class="text-gray-500 text-sm">Regular Customer</p>
+            </div>
+
+
+            <div class="bg-[#101510] p-8 rounded-3xl border border-white/10 card">
+                <div class="text-lime-300">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-300 leading-7 mt-5">
+                    "Loved the atmosphere and the food.
+                    The masala dosa is a must try!"
+                </p>
+
+                <h4 class="font-bold mt-6">Ganesh Jadhav.</h4>
+                <p class="text-gray-500 text-sm">Food Lover</p>
+            </div>
+
+
+            <div class="bg-[#101510] p-8 rounded-3xl border border-white/10 card">
+                <div class="text-lime-300">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-300 leading-7 mt-5">
+                    "Great taste, friendly service and very reasonable
+                    prices. Definitely coming back."
+                </p>
+
+                <h4 class="font-bold mt-6">Shaikh Sohel.</h4>
+                <p class="text-gray-500 text-sm">Dosa Lover</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="contact" class="py-24 bg-[#0b100c]">
+
+    <div class="max-w-6xl mx-auto px-8
+                grid lg:grid-cols-2 gap-14 card2">
+
+        <div>
+
+            <p class="text-lime-300 tracking-[0.4em] text-sm">
+                COME SAY HELLO
+            </p>
+
+            <h2 class="hand text-6xl mt-4">
+                Visit Dada Dosa
+            </h2>
+
+            <p class="text-gray-400 leading-8 mt-6">
+                Bring your friends, bring your family and bring your
+                appetite. Your perfect dosa is waiting.
+            </p>
+
+
+            <div class="space-y-6 mt-10">
+
+                <div class="flex gap-5 items-center">
+                    <div class="w-12 h-12 rounded-full bg-lime-400
+                                text-black flex items-center justify-center">
+                        <i class="ri-map-pin-2-line text-xl"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Our Location</h3>
+                        <p class="text-gray-400 text-sm">
+							Gulmandi Rd, Aurangpura,
+							Chhatrapati Sambhajinagar
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-5 items-center">
+                    <div class="w-12 h-12 rounded-full bg-lime-400
+                                text-black flex items-center justify-center">
+                        <i class="ri-phone-line text-xl"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Call Us</h3>
+                        <p class="text-gray-400 text-sm">
+                            +91 090754 72575
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-5 items-center">
+                    <div class="w-12 h-12 rounded-full bg-lime-400
+                                text-black flex items-center justify-center">
+                        <i class="ri-time-line text-xl"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold">Opening Hours</h3>
+                        <p class="text-gray-400 text-sm">
+                            10:00 AM — 11:00 PM
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bg-[#101510] p-8 md:p-10 rounded-[35px]
+                    border border-white/10">
+
+            <h3 class="text-2xl font-bold">
+                Send Us A Message
+            </h3>
+
+            <form class="space-y-5 mt-7">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full bg-black/30 border border-white/10
+                           rounded-xl px-5 py-4 outline-none
+                           focus:border-lime-400">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="w-full bg-black/30 border border-white/10
+                           rounded-xl px-5 py-4 outline-none
+                           focus:border-lime-400">
+
+                <input
+                    type="text"
+                    placeholder="Phone Number"
+                    class="w-full bg-black/30 border border-white/10
+                           rounded-xl px-5 py-4 outline-none
+                           focus:border-lime-400">
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    class="w-full bg-black/30 border border-white/10
+                           rounded-xl px-5 py-4 outline-none
+                           focus:border-lime-400"></textarea>
+
+                <button
+                    class="w-full py-4 rounded-xl bg-lime-400
+                           text-black font-bold hover:bg-lime-300
+                           transition">
+                    Send Message
+                    <i class="ri-send-plane-line ml-2"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="bg-black py-14">
+
+    <div class="max-w-7xl mx-auto px-8">
+
+        <div class="grid md:grid-cols-4 gap-10">
+
+            <div class="md:col-span-2">
+
+                <img src="https://m.media-amazon.com/images/I/61zeOecTw0L.png" class="w-28">
+
+                <p class="text-gray-500 mt-5 max-w-md leading-7">
+                    अस्सल दावणगिरी लोणी डोश्याची चव.....!
+                    Authentic flavors, crispy dosa and unforgettable
+                    food memories.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg mb-5">
+                    Quick Links
+                </h3>
+
+                <div class="space-y-3 text-gray-500">
+
+                    <a href="#home" class="block hover:text-lime-300">
+                        Home
+                    </a>
+
+                    <a href="#menu" class="block hover:text-lime-300">
+                        Menu
+                    </a>
+
+                    <a href="#about" class="block hover:text-lime-300">
+                        About
+                    </a>
+
+                    <a href="#gallery" class="block hover:text-lime-300">
+                        Gallery
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold text-lg mb-5">
+                    Follow Us
+                </h3>
+
+                <div class="flex gap-3">
+
+                    <a href="#"
+                       class="w-11 h-11 border border-white/20
+                              rounded-full flex items-center justify-center
+                              hover:bg-lime-400 hover:text-black transition">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-11 h-11 border border-white/20
+                              rounded-full flex items-center justify-center
+                              hover:bg-lime-400 hover:text-black transition">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-11 h-11 border border-white/20
+                              rounded-full flex items-center justify-center
+                              hover:bg-lime-400 hover:text-black transition">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-white/10 mt-12 pt-7
+                    flex flex-col md:flex-row justify-between gap-3
+                    text-gray-600 text-sm">
+
+            <p>
+                © 2026 Dada Dosa. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+</body>
+</html>
